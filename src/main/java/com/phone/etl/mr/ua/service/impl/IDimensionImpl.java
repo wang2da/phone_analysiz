@@ -19,8 +19,6 @@ public class IDimensionImpl implements IDimension {
     };
 
 
-
-
     @Override
     public int getDimensionByObject(BaseDimension baseDimension) throws IOException, SQLException {
         String cacheKey = this.buildCache(baseDimension);
@@ -115,7 +113,7 @@ public class IDimensionImpl implements IDimension {
 
     private String[] buildBrowserSqls() {
         String select = "select id from dimension_browser where browser_name=? and browser_version=?";
-        String insert = "insert into dimension_browser (browserName,browserVersion) values(?,?)";
+        String insert = "insert into dimension_browser (browser_name,browser_version) values(?,?)";
 
         return new String[] {select,insert};
     }

@@ -1,6 +1,5 @@
-package com.phone.etl.mr.nu;
+package com.phone.etl.mr.na;
 
-import com.phone.etl.analysis.dim.base.StatsCommonDismension;
 import com.phone.etl.analysis.dim.base.*;
 import com.phone.etl.common.EventLogsConstant;
 import com.phone.etl.output.map.MapOutput;
@@ -14,13 +13,13 @@ import org.apache.log4j.Logger;
 import java.io.IOException;
 import java.util.List;
 
-public class NewUserMapper extends Mapper<LongWritable,Text,StatsUserDimension,MapOutput>{
+public class ActiveUserMapper extends Mapper<LongWritable,Text,StatsUserDimension,MapOutput>{
 
-    private static final Logger logger = Logger.getLogger(NewUserMapper.class);
+    private static final Logger logger = Logger.getLogger(ActiveUserMapper.class);
     private StatsUserDimension k = new StatsUserDimension();
     private MapOutput v = new MapOutput();
-    private KpiDimension newUserKpi = new KpiDimension(KpiType.NEW_USER.kpiName);
-    private KpiDimension browserNewUserKpi = new KpiDimension(KpiType.BROWSER_NEW_USER.kpiName);
+    private KpiDimension newUserKpi = new KpiDimension(KpiType.ACTIVE_USER.kpiName);
+    private KpiDimension browserNewUserKpi = new KpiDimension(KpiType.BROWSER_ACTIVE_USER.kpiName);
 
 
     @Override
@@ -32,7 +31,7 @@ public class NewUserMapper extends Mapper<LongWritable,Text,StatsUserDimension,M
 
         String[] fields = line.split("\001");
         String en = fields[2];
-        if(StringUtils.isNotEmpty(en) && en.equals(EventLogsConstant.EventEnum.LAUNCH.alias)){
+        if(StringUtils.isNotEmpty(en)){
             String serverTime = fields[1];
             String platform = fields[13];
             String uuid = fields[3];
@@ -50,32 +49,17 @@ public class NewUserMapper extends Mapper<LongWritable,Text,StatsUserDimension,M
             StatsCommonDismension statsCommonDismension = this.k.getStatsCommonDismension();
             statsCommonDismension.setDateDimension(dateDimension);
 
-            //修改 1
-            List<PlatformDimension> platformDimensions = PlatformDimension.buildList(platform);
-            DateDimension dateDimensions = DateDimension.buildDate(stime, DateEnum.DAY);
-
-            this.v.setId(uuid);
-            this.v.setTime(stime);
-
             BrowserDimension defaultBrowserDimension = new BrowserDimension("","");
             statsCommonDismension.setPlatformDimension(platformDimension);
             statsCommonDismension.setKpiDimension(newUserKpi);
             this.k.setBrowserDimension(defaultBrowserDimension);
             this.k.setStatsCommonDismension(statsCommonDismension);
-//            this.v.setKpi(KpiType.NEW_USER);
 
-    //                this.v.setId(uuid);
+            this.v.setId(uuid);
+            this.v.setTime(stime);
+//
+
             context.write(this.k,this.v);
-
-//                //修改 1
-
-//            BrowserDimension browserDimension = BrowserDimension.newInstance(browserName,browserVersion);
-//            statsCommonDismension.setKpiDimension(browserNewUserKpi);
-//            this.k.setStatsCommonDismension(statsCommonDismension);
-//            this.k.setBrowserDimension(browserDimension);
-////            this.v.setKpi(KpiType.BROWSER_NEW_USER);
-//            //写出
-//            context.write(this.k, this.v);
 
         }
 

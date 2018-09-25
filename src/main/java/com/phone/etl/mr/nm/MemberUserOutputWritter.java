@@ -1,4 +1,4 @@
-package com.phone.etl.mr.nu;
+package com.phone.etl.mr.nm;
 
 import com.phone.etl.analysis.dim.base.BaseDimension;
 import com.phone.etl.analysis.dim.base.StatsUserDimension;
@@ -7,13 +7,12 @@ import com.phone.etl.mr.IOWriterOutput;
 import com.phone.etl.mr.ua.service.IDimension;
 import com.phone.etl.output.BaseOutput;
 import com.phone.etl.output.reduce.ReduceOutput;
-import com.phone.etl.utils.KpiType;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.io.IntWritable;
 
 import java.sql.PreparedStatement;
 
-public class NewUserOutputWritter implements IOWriterOutput {
+public class MemberUserOutputWritter implements IOWriterOutput {
     @Override
     public void output(Configuration conf, BaseDimension k, BaseOutput v, PreparedStatement ps, IDimension iDimension) throws Exception {
         try{
@@ -24,9 +23,9 @@ public class NewUserOutputWritter implements IOWriterOutput {
             ps.setInt(++i,iDimension.getDimensionByObject((key.getStatsCommonDismension().getDateDimension())));
             ps.setInt(++i,iDimension.getDimensionByObject(key.getStatsCommonDismension().getPlatformDimension()));
             //修改 1
-            if(v.getKpi().equals(KpiType.BROWSER_NEW_USER)){
-                ps.setInt(++i,iDimension.getDimensionByObject(key.getBrowserDimension()));
-            }
+//            if(v.getKpi().equals(KpiType.ACTIVE_USER)){
+//                ps.setInt(++i,iDimension.getDimensionByObject(key.getBrowserDimension()));
+//            }
             ps.setInt(++i,newUser);
             ps.setString(++i,conf.get(GloadUtils.RUNNING_DATE));
             ps.setInt(++i,newUser);

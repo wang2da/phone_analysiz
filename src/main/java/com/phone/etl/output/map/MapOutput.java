@@ -10,6 +10,11 @@ import java.io.IOException;
 public class MapOutput extends BaseOutput {
     private String id;
     private long time;
+    private KpiType kpi;
+
+    public void setKpi(KpiType kpi) {
+        this.kpi = kpi;
+    }
 
     public MapOutput() {
     }

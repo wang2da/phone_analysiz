@@ -29,6 +29,7 @@ public class EtlToHdfsMapper extends Mapper<LongWritable, Text, LogWritable, Nul
                     return;
                 }
 
+                //此处对 ip ，userAgent，params进行解析
                 Map<String, String> map = LogUtil.parserLog(line);
 
                 //获取事件的别名

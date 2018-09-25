@@ -71,7 +71,7 @@ public class OutputToMysqlFormat extends OutputFormat<StatsUserDimension,ReduceO
                 count++;
                 String className = conf.get("writter_"+kpi.kpiName);
 
-                String str ="writter_"+ conf.get(kpi.kpiName);
+//                String str ="writter_"+ conf.get(kpi.kpiName);
 
                 Class<?> classz = Class.forName(className);
                 IOWriterOutput writter = (IOWriterOutput) classz.newInstance();

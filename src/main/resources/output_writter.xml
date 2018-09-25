@@ -2,8 +2,37 @@
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
 
 <configuration>
-<property>
-    <name>writter_new_user</name>
-    <value>com.phone.etl.mr.nu.NewUserOutputWritter</value>
-</property>
+    <property>
+        <name>writter_new_user</name>
+        <value>com.phone.etl.mr.nu.NewUserOutputWritter</value>
+    </property>
+
+    <property>
+        <name>writter_browser_new_user</name>
+        <value>com.phone.etl.mr.nu.NewUserOutputWritter</value>
+    </property>
+
+    <property>
+        <name>writter_active_user</name>
+        <value>com.phone.etl.mr.na.ActiveUserOutputWritter</value>
+    </property>
+
+    <property>
+        <name>writter_browser_active_user</name>
+        <value>com.phone.etl.mr.nu.NewUserOutputWritter</value>
+    </property>
+
+
+    <property>
+        <name>writter_member_user</name>
+        <value>com.phone.etl.mr.nm.MemberUserOutputWritter</value>
+    </property>
+
+    <property>
+        <name>writter_browser_member_user</name>
+        <value>com.phone.etl.mr.nm.MemberUserOutputWritter</value>
+    </property>
+
+
+
 </configuration>

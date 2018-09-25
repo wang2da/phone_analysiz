@@ -1,6 +1,4 @@
-package com.phone.etl;
-
-import com.phone.etl.analysis.dim.base.*;
+package com.phone.etl.analysis.dim.base;
 
 import java.io.DataInput;
 import java.io.DataOutput;

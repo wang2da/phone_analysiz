@@ -31,13 +31,12 @@ public class PlatformDimension extends BaseDimension {
 
     public static List<PlatformDimension> buildList(String platformName){
         if(StringUtils.isEmpty(platformName)){
-            List<PlatformDimension> li = new ArrayList<>();
-            li.add(new PlatformDimension(platformName));
-            li.add(new PlatformDimension(GloadUtils.DEFAULT_ALL_VALUE));
-
-            return li;
+            platformName = GloadUtils.DEFAULT_VALUE;
         }
-        return null;
+        List<PlatformDimension> li = new ArrayList<PlatformDimension>();
+        li.add(new PlatformDimension(platformName));
+        li.add(new PlatformDimension(GloadUtils.ALL_OF_VALUE));
+        return li;
     }
 
     @Override

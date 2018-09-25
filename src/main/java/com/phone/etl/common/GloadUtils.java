@@ -12,4 +12,5 @@ public class GloadUtils {
     public static String USER = "root";
     public static String PASSWORD = "root";
     public static long DEFAULT_DATE_FORMAT = 86400000L;
+    public static final String ALL_OF_VALUE = "all";
 }

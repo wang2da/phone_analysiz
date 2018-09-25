@@ -1,4 +1,4 @@
-package com.phone.etl.mr.nu;
+package com.phone.etl.mr.nm;
 
 import com.phone.etl.analysis.dim.base.StatsUserDimension;
 import com.phone.etl.output.map.MapOutput;
@@ -10,14 +10,12 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
-public class NewUserReducer extends Reducer<StatsUserDimension,MapOutput,StatsUserDimension,ReduceOutput> {
+public class MemberUserReducer extends Reducer<StatsUserDimension,MapOutput,StatsUserDimension,ReduceOutput> {
 
-    private static final Logger logger = Logger.getLogger(NewUserReducer.class);
+    private static final Logger logger = Logger.getLogger(MemberUserReducer.class);
     private ReduceOutput v = new ReduceOutput();
     private Set unique = new HashSet();
     private MapWritable map = new MapWritable();
@@ -27,15 +25,12 @@ public class NewUserReducer extends Reducer<StatsUserDimension,MapOutput,StatsUs
     protected void reduce(StatsUserDimension key, Iterable<MapOutput> values, Context context) throws IOException, InterruptedException {
         this.unique.clear();
         map.clear();
-        System.out.println("---------------------------------------------------->come here...");
         for(MapOutput tv : values){
             this.unique.add(tv.getId());
         }
 
-
-
-        if(key.getStatsCommonDismension().getKpiDimension().getKpiName().equals(KpiType.NEW_USER.kpiName)){
-            this.v.setKpiType(KpiType.NEW_USER);
+        if(key.getStatsCommonDismension().getKpiDimension().getKpiName().equals(KpiType.MEMBER_USER.kpiName)){
+            this.v.setKpiType(KpiType.MEMBER_USER);
         }
 
         this.map.put(new IntWritable(-1),new IntWritable(this.unique.size()));

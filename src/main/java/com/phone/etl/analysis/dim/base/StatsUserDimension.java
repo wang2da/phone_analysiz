@@ -1,7 +1,5 @@
 package com.phone.etl.analysis.dim.base;
 
-import com.phone.etl.StatsCommonDismension;
-
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;

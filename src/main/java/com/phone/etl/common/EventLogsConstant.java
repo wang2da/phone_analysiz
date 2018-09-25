@@ -3,7 +3,7 @@ package com.phone.etl.common;
 public class EventLogsConstant {
 
     public static enum EventEnum{
-        LAUNCH(1,"lanuch_event","e_l"),
+        LAUNCH(1,"launch_event","e_l"),
         PAGEVIEW(2,"page_view","e_pv"),
         CHARGEREQUEST(3,"charge_request_event","e_crt"),
         CHARGESUCCESS(4,"charge_success","e_cs"),

@@ -24,11 +24,11 @@ public class BrowserDimension extends BaseDimension {
     }
 
     public static BrowserDimension newInstance(String browserName,String browserVersion){
-        BrowserDimension browserDimension = new BrowserDimension();
-        browserDimension.browserName=browserName;
-        browserDimension.browserVersion=browserVersion;
+//        BrowserDimension browserDimension = new BrowserDimension();
+//        browserDimension.browserName=browserName;
+//        browserDimension.browserVersion=browserVersion;
 
-        return browserDimension;
+        return new BrowserDimension(browserName,browserVersion);
     }
 
     public static List<BrowserDimension> buildList(String browserName, String browserVersion){
@@ -37,12 +37,12 @@ public class BrowserDimension extends BaseDimension {
             browserName=browserVersion= GloadUtils.DEFAULT_VALUE;
 
         }
-        if(StringUtils.isEmpty(browserName)){
+        if(StringUtils.isEmpty(browserVersion)){
             browserVersion=GloadUtils.DEFAULT_VALUE;
         }
 
         li.add(newInstance(browserName,browserVersion));
-        li.add(newInstance(browserName,GloadUtils.DEFAULT_ALL_VALUE));
+//        li.add(newInstance(browserName,GloadUtils.ALL_OF_VALUE));
 
         return li;
     }
