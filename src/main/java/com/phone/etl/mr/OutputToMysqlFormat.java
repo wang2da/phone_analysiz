@@ -1,13 +1,11 @@
 package com.phone.etl.mr;
 
-import com.phone.etl.analysis.dim.base.StatsBaseDimension;
 import com.phone.etl.analysis.dim.base.StatsUserDimension;
 import com.phone.etl.mr.ua.service.IDimension;
 import com.phone.etl.mr.ua.service.impl.IDimensionImpl;
 import com.phone.etl.output.reduce.ReduceOutput;
 import com.phone.etl.utils.JdbcUtils;
 import com.phone.etl.utils.KpiType;
-import org.apache.calcite.prepare.Prepare;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.mapreduce.*;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter;

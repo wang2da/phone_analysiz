@@ -25,13 +25,27 @@
 
     <property>
         <name>writter_member_user</name>
-        <value>com.phone.etl.mr.nm.MemberUserOutputWritter</value>
+        <value>com.phone.etl.mr.am.MemberUserOutputWritter</value>
     </property>
 
     <property>
         <name>writter_browser_member_user</name>
-        <value>com.phone.etl.mr.nm.MemberUserOutputWritter</value>
+        <value>com.phone.etl.mr.am.MemberUserOutputWritter</value>
     </property>
+
+
+    <property>
+        <name>writter_member_info</name>
+        <value>com.phone.etl.mr.nm.NewMemberOutputWritter</value>
+    </property>
+
+    <property>
+        <name>writter_new_member</name>
+        <value>com.phone.etl.mr.nm.NewMemberOutputWritter</value>
+    </property>
+
+
+
 
 
 

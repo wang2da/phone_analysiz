@@ -49,32 +49,24 @@ public class NewUserMapper extends Mapper<LongWritable,Text,StatsUserDimension,M
 
             StatsCommonDismension statsCommonDismension = this.k.getStatsCommonDismension();
             statsCommonDismension.setDateDimension(dateDimension);
+            statsCommonDismension.setPlatformDimension(platformDimension);
 
-            //修改 1
-            List<PlatformDimension> platformDimensions = PlatformDimension.buildList(platform);
-            DateDimension dateDimensions = DateDimension.buildDate(stime, DateEnum.DAY);
-
-            this.v.setId(uuid);
-            this.v.setTime(stime);
 
             BrowserDimension defaultBrowserDimension = new BrowserDimension("","");
-            statsCommonDismension.setPlatformDimension(platformDimension);
             statsCommonDismension.setKpiDimension(newUserKpi);
             this.k.setBrowserDimension(defaultBrowserDimension);
             this.k.setStatsCommonDismension(statsCommonDismension);
-//            this.v.setKpi(KpiType.NEW_USER);
+            this.v.setId(uuid);
 
-    //                this.v.setId(uuid);
             context.write(this.k,this.v);
 
-//                //修改 1
 
-//            BrowserDimension browserDimension = BrowserDimension.newInstance(browserName,browserVersion);
 //            statsCommonDismension.setKpiDimension(browserNewUserKpi);
-//            this.k.setStatsCommonDismension(statsCommonDismension);
+//            BrowserDimension browserDimension = BrowserDimension.newInstance(browserName,browserVersion);
 //            this.k.setBrowserDimension(browserDimension);
-////            this.v.setKpi(KpiType.BROWSER_NEW_USER);
-//            //写出
+//            this.k.setStatsCommonDismension(statsCommonDismension);
+//
+//
 //            context.write(this.k, this.v);
 
         }

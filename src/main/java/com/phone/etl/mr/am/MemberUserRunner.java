@@ -1,12 +1,10 @@
-package com.phone.etl.mr.nm;
+package com.phone.etl.mr.am;
 
 import com.phone.etl.analysis.dim.base.DateDimension;
 import com.phone.etl.analysis.dim.base.DateEnum;
 import com.phone.etl.analysis.dim.base.StatsUserDimension;
 import com.phone.etl.common.GloadUtils;
 import com.phone.etl.mr.OutputToMysqlFormat;
-import com.phone.etl.mr.na.ActiveUserMapper;
-import com.phone.etl.mr.na.ActiveUserReducer;
 import com.phone.etl.mr.ua.service.IDimension;
 import com.phone.etl.mr.ua.service.impl.IDimensionImpl;
 import com.phone.etl.output.map.MapOutput;

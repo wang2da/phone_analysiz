@@ -1,4 +1,4 @@
-package com.phone.etl.mr.nm;
+package com.phone.etl.mr.am;
 
 import com.phone.etl.analysis.dim.base.BaseDimension;
 import com.phone.etl.analysis.dim.base.StatsUserDimension;

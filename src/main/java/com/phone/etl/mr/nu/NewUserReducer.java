@@ -32,8 +32,6 @@ public class NewUserReducer extends Reducer<StatsUserDimension,MapOutput,StatsUs
             this.unique.add(tv.getId());
         }
 
-
-
         if(key.getStatsCommonDismension().getKpiDimension().getKpiName().equals(KpiType.NEW_USER.kpiName)){
             this.v.setKpiType(KpiType.NEW_USER);
         }

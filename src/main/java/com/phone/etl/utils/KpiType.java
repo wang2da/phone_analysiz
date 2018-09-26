@@ -13,7 +13,10 @@ public enum KpiType {
     ACTIVE_USER("active_user"),
     BROWSER_ACTIVE_USER("browser_active_user"),
     MEMBER_USER("member_user"),
-    BROWSER_MEMBER_USER("browser_member_user")
+    BROWSER_MEMBER_USER("browser_member_user"),
+    NEW_MEMBER("new_member"),
+    BROWSER_NEW_MEMBER("browser_new_member"),
+    MEMBER_INFO("member_info")
     ;
 
     public String kpiName;

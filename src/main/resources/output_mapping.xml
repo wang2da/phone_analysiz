@@ -71,4 +71,37 @@
             ) values(?,?,?,?) on duplicate key update `active_members` = ?
         </value>
     </property>
+
+
+
+    <property>
+        <name>new_member</name>
+        <value>insert into `stats_user`(
+            `date_dimension_id`,
+            `platform_dimension_id`,
+            `new_members`,
+            `created`
+            ) values(?,?,?,?) on duplicate key update `new_members` = ?
+        </value>
+    </property>
+
+
+    <property>
+        <name>total_member_info</name>
+        <value>
+            select `member_id` from `member_info` where `member_id` = ?
+        </value>
+    </property>
+
+
+    <property>
+        <name>member_info</name>
+        <value>insert into `member_info`(
+            `member_id`,
+            `last_visit_date`,
+            `member_id_server_date`,
+            `created`
+            ) values(?,?,?,?) on duplicate key update `last_visit_date` = ?
+        </value>
+    </property>
 </configuration>
