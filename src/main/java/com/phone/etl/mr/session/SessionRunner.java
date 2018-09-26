@@ -1,10 +1,12 @@
-package com.phone.etl.mr.am;
+package com.phone.etl.mr.session;
 
 import com.phone.etl.analysis.dim.base.DateDimension;
 import com.phone.etl.analysis.dim.base.DateEnum;
 import com.phone.etl.analysis.dim.base.StatsUserDimension;
 import com.phone.etl.common.GloadUtils;
 import com.phone.etl.mr.OutputToMysqlFormat;
+import com.phone.etl.mr.nm.NewMemberMapper;
+import com.phone.etl.mr.nm.NewMemberReducer;
 import com.phone.etl.mr.ua.service.IDimension;
 import com.phone.etl.mr.ua.service.impl.IDimensionImpl;
 import com.phone.etl.output.map.MapOutput;
@@ -28,14 +30,14 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MemberUserRunner implements Tool {
-    private static final Logger logger = Logger.getLogger(MemberUserRunner.class);
+public class SessionRunner implements Tool {
+    private static final Logger logger = Logger.getLogger(SessionRunner.class);
     private Configuration conf = new Configuration();
 
     //主函数---入口
     public static void main(String[] args){
         try {
-            ToolRunner.run(new Configuration(),new MemberUserRunner(),args);
+            ToolRunner.run(new Configuration(),new SessionRunner(),args);
         } catch (Exception e) {
             logger.warn("NEW_USER TO MYSQL is failed !!!",e);
         }
@@ -51,15 +53,15 @@ public class MemberUserRunner implements Tool {
 
         Job job = Job.getInstance(conf,"NEW_USER TO MYSQL");
 
-        job.setJarByClass(MemberUserRunner.class);
+        job.setJarByClass(SessionRunner.class);
 
         //设置map相关参数
-        job.setMapperClass(MemberUserMapper.class);
+        job.setMapperClass(SessionMapper.class);
         job.setMapOutputKeyClass(StatsUserDimension.class);
         job.setMapOutputValueClass(MapOutput.class);
 
         //设置reduce相关参数
-        job.setReducerClass(MemberUserReducer.class);
+        job.setReducerClass(SessionReducer.class);
         job.setOutputKeyClass(StatsUserDimension.class);
         job.setOutputValueClass(ReduceOutput.class);
         job.setOutputFormatClass(OutputToMysqlFormat.class);
@@ -68,15 +70,14 @@ public class MemberUserRunner implements Tool {
         job.setNumReduceTasks(1);
         FileInputFormat.setInputPaths(job,new Path("/odl/09/18/part-m-00000"));
 
-        //设置输入参数
-//        FileInputFormat.setInputPaths(job,new Path("/ods/09/18/part-m-00000"));
-//        return job.waitForCompletion(true)? 0:1;
-        if(job.waitForCompletion(true)){
-            this.computeNewTotalUser(job);
-            return 0;
-        }else {
-            return 1;
-        }
+
+        return job.waitForCompletion(true)? 0:1;
+//        if(job.waitForCompletion(true)){
+//            this.computeNewTotalUser(job);
+//            return 0;
+//        }else {
+//            return 1;
+//        }
     }
 
     @Override
@@ -98,16 +99,22 @@ public class MemberUserRunner implements Tool {
         String day = fields[2];
         try{
             Path inputPath = new Path("/log/2018/" + month + "/" + day);
+
             FileSystem fs = FileSystem.get(job.getConfiguration());
             if(fs.exists(inputPath)){
                 FileInputFormat.addInputPath(job,inputPath);
             }
+
+
 
         }catch (Exception e){
             logger.error("设置路径错误",e);
         }
 
     }
+
+
+
 
     private void computeNewTotalUser(Job job) {
         Connection conn = null;
@@ -135,28 +142,28 @@ public class MemberUserRunner implements Tool {
             conn = JdbcUtils.getConn();
             Map<String,Integer> map = new HashMap<String,Integer>();
             if(yesterDimensionId > 0){
-                ps = conn.prepareStatement(conf.get("total_new_total_member"));
+                ps = conn.prepareStatement(conf.get(GloadUtils.PREFIX_TOTAL+"new_total_user"));
                 //赋值
                 ps.setInt(1,yesterDimensionId);
                 //执行
                 rs = ps.executeQuery();
                 while (rs.next()){
                     int platformId = rs.getInt("platform_dimension_id");
-                    int totalNewUser = rs.getInt("total_members");
+                    int totalNewUser = rs.getInt("total_install_users");
                     //存储
                     map.put(platformId+"",totalNewUser);
                 }
             }
 
             if(nowDimensionId > 0){
-                ps = conn.prepareStatement(conf.get("total_user_new_member"));
+                ps = conn.prepareStatement(conf.get(GloadUtils.PREFIX_TOTAL+"user_new_user"));
                 //赋值
                 ps.setInt(1,nowDimensionId);
                 //执行
                 rs = ps.executeQuery();
                 while (rs.next()){
                     int platformId = rs.getInt("platform_dimension_id");
-                    int newUser = rs.getInt("new_members");
+                    int newUser = rs.getInt("new_install_users");
                     //存储
                     if(map.containsKey(platformId+"")){
                         newUser += map.get(platformId+"");
@@ -166,7 +173,7 @@ public class MemberUserRunner implements Tool {
             }
 
             //更新新增的总用户
-            ps = conn.prepareStatement(conf.get("total_user_new_update_member"));
+            ps = conn.prepareStatement(conf.get(GloadUtils.PREFIX_TOTAL+"user_new_update_user"));
             //赋值
             for (Map.Entry<String,Integer> en:map.entrySet()){
                 ps.setInt(1,nowDimensionId);

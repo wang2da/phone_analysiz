@@ -34,7 +34,7 @@ public class NewMemberReducer extends Reducer<StatsUserDimension,MapOutput,Stats
                 li.put(tv.getId(),list);
             }
         }
-
+        System.out.println("li"+li.toString());
         for(Map.Entry<String,List<Long>> en : li.entrySet()){
             this.v.setKpiType(KpiType.MEMBER_INFO);
             this.map.put(new IntWritable(-2),new Text(en.getKey()));
@@ -49,7 +49,6 @@ public class NewMemberReducer extends Reducer<StatsUserDimension,MapOutput,Stats
         this.map.put(new IntWritable(-1),new IntWritable(this.li.size()));
 
         this.v.setValue(this.map);
-
 
         context.write(key,this.v);
         this.unique.clear();

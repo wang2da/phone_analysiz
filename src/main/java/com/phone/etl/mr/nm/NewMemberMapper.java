@@ -45,8 +45,6 @@ public class NewMemberMapper extends Mapper<LongWritable,Text,StatsUserDimension
         String memberId = fields[4];
         String serverTime = fields[1];
         String platform = fields[13];
-        String browserName = fields[24];
-        String browserVersion = fields[25];
 
         if(StringUtils.isEmpty(memberId) || StringUtil.isEmpty(serverTime) || StringUtil.isEmpty(platform)){
             return;

@@ -1,10 +1,12 @@
-package com.phone.etl.mr.am;
+package com.phone.etl.mr.pv;
 
 import com.phone.etl.analysis.dim.base.DateDimension;
 import com.phone.etl.analysis.dim.base.DateEnum;
 import com.phone.etl.analysis.dim.base.StatsUserDimension;
 import com.phone.etl.common.GloadUtils;
 import com.phone.etl.mr.OutputToMysqlFormat;
+import com.phone.etl.mr.am.MemberUserMapper;
+import com.phone.etl.mr.am.MemberUserReducer;
 import com.phone.etl.mr.ua.service.IDimension;
 import com.phone.etl.mr.ua.service.impl.IDimensionImpl;
 import com.phone.etl.output.map.MapOutput;
@@ -28,14 +30,14 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MemberUserRunner implements Tool {
-    private static final Logger logger = Logger.getLogger(MemberUserRunner.class);
+public class PageViewRunner implements Tool {
+    private static final Logger logger = Logger.getLogger(PageViewRunner.class);
     private Configuration conf = new Configuration();
 
     //主函数---入口
     public static void main(String[] args){
         try {
-            ToolRunner.run(new Configuration(),new MemberUserRunner(),args);
+            ToolRunner.run(new Configuration(),new PageViewRunner(),args);
         } catch (Exception e) {
             logger.warn("NEW_USER TO MYSQL is failed !!!",e);
         }
@@ -51,15 +53,15 @@ public class MemberUserRunner implements Tool {
 
         Job job = Job.getInstance(conf,"NEW_USER TO MYSQL");
 
-        job.setJarByClass(MemberUserRunner.class);
+        job.setJarByClass(PageViewRunner.class);
 
         //设置map相关参数
-        job.setMapperClass(MemberUserMapper.class);
+        job.setMapperClass(PageViewMapper.class);
         job.setMapOutputKeyClass(StatsUserDimension.class);
         job.setMapOutputValueClass(MapOutput.class);
 
         //设置reduce相关参数
-        job.setReducerClass(MemberUserReducer.class);
+        job.setReducerClass(PageViesReducer.class);
         job.setOutputKeyClass(StatsUserDimension.class);
         job.setOutputValueClass(ReduceOutput.class);
         job.setOutputFormatClass(OutputToMysqlFormat.class);
@@ -70,13 +72,13 @@ public class MemberUserRunner implements Tool {
 
         //设置输入参数
 //        FileInputFormat.setInputPaths(job,new Path("/ods/09/18/part-m-00000"));
-//        return job.waitForCompletion(true)? 0:1;
-        if(job.waitForCompletion(true)){
-            this.computeNewTotalUser(job);
-            return 0;
-        }else {
-            return 1;
-        }
+        return job.waitForCompletion(true)? 0:1;
+//        if(job.waitForCompletion(true)){
+//            this.computeNewTotalUser(job);
+//            return 0;
+//        }else {
+//            return 1;
+//        }
     }
 
     @Override

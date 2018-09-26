@@ -49,4 +49,16 @@
 
 
 
+    <property>
+        <name>writter_sessions</name>
+        <value>com.phone.etl.mr.session.SessionOutputWritter</value>
+    </property>
+
+    <property>
+        <name>writter_page_view</name>
+        <value>com.phone.etl.mr.pv.PageViewOutputWritter</value>
+    </property>
+
+
+
 </configuration>
