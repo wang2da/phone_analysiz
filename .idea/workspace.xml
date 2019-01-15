@@ -2,56 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57079360-1cb8-481a-99ae-0adb93906502" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/analysis/dim/base/CurrencyTypeDimension.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/analysis/dim/base/EventDimension.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/analysis/dim/base/LocationDimension.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/analysis/dim/base/PaymentTypeDimension.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/analysis/dim/base/StatsLocalDimension.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/hive/en/CurrencyTypeDimensionUdf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/hive/en/DateDimensionUDF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/hive/en/EventDimensionUDF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/hive/en/PaymentTypeDimensionUdf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/hive/en/PlatformUDF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/etl/EtlToHdfs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/local/LocalMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/local/LocalOutputWritter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/local/LocalReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/local/LocalRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/output/reduce/LocalOutputValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/output/reduce/TextOutputValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/analysis/dim/base/StatsCommonDismension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/analysis/dim/base/StatsCommonDismension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/analysis/dim/base/StatsUserDimension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/analysis/dim/base/StatsUserDimension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/EtlToHdfs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/EtlToHdfsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/etl/EtlToHdfsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/EtlToHdfsRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/etl/EtlToHdfsRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/IOWriterOutput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/LogWritable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/etl/LogWritable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/OutputToMysqlFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/etl/OutputToMysqlFormat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/am/MemberUserOutputWritter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/am/MemberUserOutputWritter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/am/MemberUserRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/am/MemberUserRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/na/ActiveUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/na/ActiveUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/na/ActiveUserOutputWritter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/na/ActiveUserOutputWritter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/na/ActiveUserReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/na/ActiveUserReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/na/ActiveUserRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/na/ActiveUserRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nm/NewMemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nm/NewMemberMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nm/NewMemberOutputWritter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nm/NewMemberOutputWritter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nm/NewMemberReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nm/NewMemberReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nm/NewMemberRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nm/NewMemberRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nu/NewUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nu/NewUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nu/NewUserOutputWritter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nu/NewUserOutputWritter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nu/NewUserRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nu/NewUserRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/pv/PageViesReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/pv/PageViewReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/pv/PageViewOutputWritter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/pv/PageViewOutputWritter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/pv/PageViewRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/pv/PageViewRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/session/SessionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/session/SessionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/session/SessionOutputWritter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/session/SessionOutputWritter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/session/SessionReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/session/SessionReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/session/SessionRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/session/SessionRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/ua/service/impl/IDimensionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/ua/service/impl/IDimensionImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/phone/etl/utils/KpiType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/phone/etl/utils/KpiType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/output_mapping.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/output_writter.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/output_writter.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/phone/IpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/phone/IpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,6 +20,11 @@
         <counts>
           <entry key="project.open.time.9" value="1" />
           <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -113,6 +69,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -645,7 +606,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537262855648</updated>
-      <workItem from="1547541307730" duration="249000" />
+      <workItem from="1547541307730" duration="849000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1537619420368</created>
@@ -679,7 +640,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249000" />
+    <option name="totallyTimeSpent" value="849000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -691,7 +652,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28214827" />
       <window_info id="Structure" order="1" weight="0.24962178" />
