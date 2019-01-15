@@ -4,7 +4,7 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class StatsUserDimension extends BaseDimension{
+public class StatsUserDimension extends StatsBaseDimension{
 
     BrowserDimension browserDimension = new BrowserDimension();
     StatsCommonDismension  statsCommonDismension = new StatsCommonDismension();
@@ -59,7 +59,7 @@ public class StatsUserDimension extends BaseDimension{
             return temp;
         }
 
-        return this.browserDimension.compareTo(browserDimension);
+        return this.browserDimension.compareTo(other.browserDimension);
 
     }
 

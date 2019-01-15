@@ -10,6 +10,8 @@ public class StatsCommonDismension extends StatsBaseDimension {
     public KpiDimension kpiDimension = new KpiDimension();
     public PlatformDimension platformDimension = new PlatformDimension();
 
+
+
     public StatsCommonDismension() {
     }
 
@@ -67,7 +69,8 @@ public class StatsCommonDismension extends StatsBaseDimension {
         if(temp!=0){
             return temp;
         }
-        return this.kpiDimension.compareTo(kpiDimension);
+
+        return this.kpiDimension.compareTo(other.kpiDimension);
     }
 
     @Override
@@ -76,6 +79,7 @@ public class StatsCommonDismension extends StatsBaseDimension {
         platformDimension.write(dataOutput);
         kpiDimension.write(dataOutput);
 
+
     }
 
     @Override
@@ -83,6 +87,7 @@ public class StatsCommonDismension extends StatsBaseDimension {
         this.dateDimension.readFields(dataInput);
         platformDimension.readFields(dataInput);
         kpiDimension.readFields(dataInput);
+
     }
 
     @Override

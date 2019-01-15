@@ -34,6 +34,8 @@ public class SessionMapper extends Mapper<LongWritable,Text,StatsUserDimension,M
         String u_sd = fields[5];
         String serverTime = fields[1];
         String platform = fields[13];
+        String browserName = fields[24];
+        String browserVersion = fields[25];
         if(StringUtils.isNotEmpty(en) && StringUtil.isNotEmpty(u_sd)){
 
             Long stime = Long.valueOf(serverTime);
@@ -45,7 +47,7 @@ public class SessionMapper extends Mapper<LongWritable,Text,StatsUserDimension,M
             statsCommonDismension.setPlatformDimension(platformDimension);
 
 
-            BrowserDimension defaultBrowserDimension = new BrowserDimension("","");
+            BrowserDimension defaultBrowserDimension = new BrowserDimension(browserName,browserVersion);
             statsCommonDismension.setKpiDimension(newUserKpi);
             this.k.setBrowserDimension(defaultBrowserDimension);
             this.k.setStatsCommonDismension(statsCommonDismension);

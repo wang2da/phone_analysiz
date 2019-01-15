@@ -34,11 +34,18 @@ public class IDimensionImpl implements IDimension {
             sqls = this.buildPlatFormSqls();
         } else if (baseDimension instanceof BrowserDimension) {
             sqls = this.buildBrowserSqls();
-        } else if (baseDimension instanceof PlatformDimension) {
-            sqls = this.buildPlatFormSqls();
         } else if (baseDimension instanceof KpiDimension) {
             sqls = this.buildKpiSqls();
+        }else if (baseDimension instanceof LocationDimension) {
+            sqls = this.buildLocationSqls();
+        }else if(baseDimension instanceof EventDimension){
+            sqls = buildEventSqls(baseDimension);
+        }else if(baseDimension instanceof CurrencyTypeDimension){
+            sqls = buildCurrentSqls(baseDimension);
+        }else if(baseDimension instanceof PaymentTypeDimension){
+            sqls = this.buildPaymentSqls(baseDimension);
         }
+
 
         Connection conn = JdbcUtils.getConn();
         int id = -1;
@@ -50,6 +57,8 @@ public class IDimensionImpl implements IDimension {
 
         return id;
     }
+
+
 
     private int execute(String[] sqls, BaseDimension baseDimension, Connection conn) {
         PreparedStatement ps = null;
@@ -98,15 +107,53 @@ public class IDimensionImpl implements IDimension {
             }else if(baseDimension instanceof KpiDimension){
                 KpiDimension kpiDimension = (KpiDimension)baseDimension;
                 ps.setString(++i,kpiDimension.getKpiName());
+            }else if(baseDimension instanceof LocationDimension){
+                LocationDimension locationDimension = (LocationDimension)baseDimension;
+                ps.setString(++i,locationDimension.getCountry());
+                ps.setString(++i,locationDimension.getProvince());
+                ps.setString(++i,locationDimension.getCity());
+            }else if(baseDimension instanceof EventDimension){
+                EventDimension event = (EventDimension) baseDimension;
+                ps.setString(++i,event.getCategory());
+                ps.setString(++i,event.getAction());
+            }else if(baseDimension instanceof CurrencyTypeDimension){
+                CurrencyTypeDimension currency = (CurrencyTypeDimension) baseDimension;
+                ps.setString(++i,currency.getCurrencyName());
+            }else if(baseDimension instanceof PaymentTypeDimension){
+                PaymentTypeDimension payment = (PaymentTypeDimension) baseDimension;
+                ps.setString(++i,payment.getPaymentType());
             }
         }catch (SQLException e){
             e.printStackTrace();
         }
     }
 
+    private String[] buildEventSqls(BaseDimension dimension) {
+        String query = "select id from `dimension_event` where `category` = ? and `action` = ? ";
+        String insert = "insert into `dimension_event`(`category` , `action` ) values(?,?)";
+        return new String[]{query,insert};
+    }
+
+    private String[] buildPaymentSqls(BaseDimension dimension) {
+        String query = "select id from `dimension_payment_type` where `payment_type` = ?";
+        String insert = "insert into `dimension_payment_type`(`payment_type`) values(?)";
+        return new String[]{query,insert};
+    }
+    private String[] buildCurrentSqls(BaseDimension dimension) {
+        String query = "select id from `dimension_currency_type` where `currency_name` = ?";
+        String insert = "insert into `dimension_currency_type`(`currency_name`) values(?)";
+        return new String[]{query,insert};
+    }
+
+    private String[] buildLocationSqls() {
+        String select = "select `id` from `dimension_location` where `country` = ? and `province` = ? and `city` = ?";
+        String insert = "insert into `dimension_location`(`country` ,`province`,`city`) values(?,?,?)";
+        return new String[]{select,insert};
+    }
+
     private String[] buildKpiSqls() {
-        String select = "selcet id form dimension_kpi where kpi_name=?";
-        String insert = "insert into dismension_kpi(kpi_name) values(?)";
+        String select = "select id from dimension_kpi where kpi_name=?";
+        String insert = "insert into dimension_kpi(kpi_name) values(?)";
 
         return new String[]{select,insert};
     }
@@ -155,6 +202,25 @@ public class IDimensionImpl implements IDimension {
             sb.append("platform_");
             KpiDimension date = (KpiDimension)baseDimension;
             sb.append(date.getKpiName());
+        }else if(baseDimension instanceof LocationDimension){
+            sb.append("platform_");
+            LocationDimension date = (LocationDimension)baseDimension;
+            sb.append(date.getCountry());
+            sb.append(date.getProvince());
+            sb.append(date.getCity());
+        }else if(baseDimension instanceof EventDimension){
+            EventDimension event = (EventDimension) baseDimension;
+            sb.append("event_");
+            sb.append(event.getCategory());
+            sb.append(event.getAction());
+        }else if(baseDimension instanceof CurrencyTypeDimension){
+            sb.append("currency_");
+            CurrencyTypeDimension currency = (CurrencyTypeDimension) baseDimension;
+            sb.append(currency.getCurrencyName());
+        }else if(baseDimension instanceof PaymentTypeDimension){
+            sb.append("payment_");
+            PaymentTypeDimension payment = (PaymentTypeDimension) baseDimension;
+            sb.append(payment.getPaymentType());
         }
         return sb.length() == 0 ? null : sb.toString();
     }

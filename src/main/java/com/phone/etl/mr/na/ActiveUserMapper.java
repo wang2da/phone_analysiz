@@ -33,16 +33,21 @@ public class ActiveUserMapper extends Mapper<LongWritable,Text,StatsUserDimensio
         String en = fields[2];
         if(StringUtils.isNotEmpty(en)){
             String serverTime = fields[1];
+            Long stime = Long.valueOf(serverTime);
             String platform = fields[13];
             String uuid = fields[3];
             String browserName = fields[24];
             String browserVersion = fields[25];
+            String country = fields[28];
+            String province = fields[29];
+            String city = fields[30];
+            LocationDimension locationDimension = LocationDimension.getInstance(country,province,city);
+
             if(StringUtils.isEmpty(serverTime) || StringUtils.isEmpty(uuid)){
                 logger.info("serverTime | uuid is null.");
                 return;
             }
 
-            Long stime = Long.valueOf(serverTime);
             DateDimension dateDimension = DateDimension.buildDate(stime, DateEnum.DAY);
             PlatformDimension platformDimension = PlatformDimension.getInstance(platform);
 
@@ -54,6 +59,7 @@ public class ActiveUserMapper extends Mapper<LongWritable,Text,StatsUserDimensio
             statsCommonDismension.setKpiDimension(newUserKpi);
             this.k.setBrowserDimension(defaultBrowserDimension);
             this.k.setStatsCommonDismension(statsCommonDismension);
+
 
             this.v.setId(uuid);
             this.v.setTime(stime);

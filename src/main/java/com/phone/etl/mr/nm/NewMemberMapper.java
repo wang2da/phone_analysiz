@@ -50,9 +50,9 @@ public class NewMemberMapper extends Mapper<LongWritable,Text,StatsUserDimension
             return;
         }
 
-        if(!MemberUtil.checkMemberId(memberId)){
-            return;
-        }
+//        if(!MemberUtil.checkMemberId(memberId)){
+//            return;
+//        }
 
         if(!MemberUtil.isNewMember(memberId,conn,context.getConfiguration())){
             return;

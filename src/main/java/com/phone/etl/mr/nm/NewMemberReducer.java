@@ -40,6 +40,7 @@ public class NewMemberReducer extends Reducer<StatsUserDimension,MapOutput,Stats
             this.map.put(new IntWritable(-2),new Text(en.getKey()));
             Collections.sort(en.getValue());
             this.map.put(new IntWritable(-3),new LongWritable(en.getValue().get(0)));
+            this.v.setValue(this.map);
             context.write(key,this.v);
 
         }

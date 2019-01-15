@@ -4,7 +4,7 @@ import com.phone.etl.analysis.dim.base.DateDimension;
 import com.phone.etl.analysis.dim.base.DateEnum;
 import com.phone.etl.analysis.dim.base.StatsUserDimension;
 import com.phone.etl.common.GloadUtils;
-import com.phone.etl.mr.OutputToMysqlFormat;
+import com.phone.etl.mr.etl.OutputToMysqlFormat;
 import com.phone.etl.mr.ua.service.IDimension;
 import com.phone.etl.mr.ua.service.impl.IDimensionImpl;
 import com.phone.etl.output.map.MapOutput;
@@ -66,7 +66,7 @@ public class NewUserRunner implements Tool {
 
         //设置reduce task的数量
         job.setNumReduceTasks(1);
-        FileInputFormat.setInputPaths(job,new Path("/odl/09/18/part-m-00000"));
+        FileInputFormat.setInputPaths(job,new Path("/odl/09/05/part-m-00000"));
 
         //设置输入参数
 //        FileInputFormat.setInputPaths(job,new Path("/ods/09/18/part-m-00000"));
@@ -91,72 +91,30 @@ public class NewUserRunner implements Tool {
     public Configuration getConf() {
         return this.conf;
     }
-//    private static Configuration conf = new Configuration();
-//    private static Logger logger = Logger.getLogger(NewUserRunner.class);
 //
-//    public static void main(String[] args) {
-//        try {
-//            ToolRunner.run(new Configuration(),new NewUserRunner(),args);
-//        } catch (Exception e) {
-//            logger.error("运行新增用户指标失败.",e);
-//        }
-//    }
-//
-//
-//    @Override
-//    public int run(String[] strings) throws Exception {
-//        Configuration conf = getConf();
-//        conf.set("fs.defaultFS","hdfs://hadoop01:8020");
-//        System.setProperty("HADOOP_USER_NAME","root");
-//        this.setArgs(strings,conf);
-//
-//        Job job = Job.getInstance(conf,"NewUserRunner");
-//        job.setJarByClass(NewUserRunner.class);
-//        job.setMapperClass(NewUserMapper.class);
-//        job.setMapOutputKeyClass(StatsUserDimension.class);
-//        job.setMapOutputValueClass(MapOutput.class);
-//
-//
-//        job.setReducerClass(NewUserReducer.class);
-//        job.setOutputKeyClass(StatsUserDimension.class);
-//        job.setOutputValueClass(ReduceOutput.class);
-//
-//        FileInputFormat.setInputPaths(job,new Path("/odl/09/18"));
-//        job.setOutputFormatClass(OutputToMysqlFormat.class);
-////        handleInputAndOutput(job);
-//
-//        return job.waitForCompletion(true)?0:1;
-//
-////        if(job.waitForCompletion(true)){
-////            this.computeNewTotalUser(job);
-////            return 0;
-////        }else {
-////            return 1;
-////        }
-//    }
-    private void handleInputAndOutput(Job job) {
-        String[] fields = job.getConfiguration().get(GloadUtils.RUNNING_DATE).split("-");
-        String month = fields[1];
-        String day = fields[2];
-        try{
-            Path inputPath = new Path("/log/2018/" + month + "/" + day);
-//            Path outputPath = new Path("/odl/" + month + "/" + day);
-            FileSystem fs = FileSystem.get(job.getConfiguration());
-            if(fs.exists(inputPath)){
-                FileInputFormat.addInputPath(job,inputPath);
-            }
-
-//            if(fs.exists(outputPath)){
-//                fs.delete(outputPath);
+//    private void handleInputAndOutput(Job job) {
+//        String[] fields = job.getConfiguration().get(GloadUtils.RUNNING_DATE).split("-");
+//        String month = fields[1];
+//        String day = fields[2];
+//        try{
+//            Path inputPath = new Path("/odl/" + month + "/" + day);
+////            Path outputPath = new Path("/odl/" + month + "/" + day);
+//            FileSystem fs = FileSystem.get(job.getConfiguration());
+//            if(fs.exists(inputPath)){
+//                FileInputFormat.addInputPath(job,inputPath);
 //            }
-//            FileOutputFormat.setOutputPath(job,outputPath);
+//
+////            if(fs.exists(outputPath)){
+////                fs.delete(outputPath);
+////            }
+////            FileOutputFormat.setOutputPath(job,outputPath);
 
-
-        }catch (Exception e){
-            logger.error("设置路径错误",e);
-        }
-
-    }
+//
+//        }catch (Exception e){
+//            logger.error("设置路径错误",e);
+//        }
+//
+//    }
 
 
 //    @Override

@@ -25,7 +25,7 @@ public class SessionReducer extends Reducer<StatsUserDimension,MapOutput,StatsUs
     protected void reduce(StatsUserDimension key, Iterable<MapOutput> values, Context context) throws IOException, InterruptedException {
 
         this.unique.clear();
-        this.map.clear();
+//        this.map.clear();
 
         for(MapOutput tv : values){
             String sessionId = tv.getId();
@@ -46,16 +46,14 @@ public class SessionReducer extends Reducer<StatsUserDimension,MapOutput,StatsUs
         mapWritable.put(new IntWritable(-1),new IntWritable(this.map.size()));
 
         int sessionLength = 0;
-        for(Map.Entry<String,List<Long>> en : map.entrySet()){
-            if(en.getValue().size()>=2){
+        for (Map.Entry<String,List<Long>> en:map.entrySet()) {
+            if(en.getValue().size() >= 2){
                 Collections.sort(en.getValue());
-                sessionLength += (en.getValue().get(en.getValue().size()-1)-en.getValue().get(0));
-                System.out.println(en.getKey()+"<----------------->"+sessionLength);
+                sessionLength += (en.getValue().get(en.getValue().size()-1) - en.getValue().get(0));
+                System.out.println(en.getKey()+"aaaaaa:"+sessionLength);
             }
         }
 
-
-        System.out.println("=================>"+sessionLength);;
         if(sessionLength>0 && sessionLength<= GloadUtils.DAY_OF_MILISECONDS){
             if(sessionLength%1000==0){
                 sessionLength=sessionLength/1000;
@@ -66,8 +64,8 @@ public class SessionReducer extends Reducer<StatsUserDimension,MapOutput,StatsUs
         }
 
 
-        if(key.getStatsCommonDismension().getKpiDimension().getKpiName().equals(KpiType.NEW_USER.kpiName)){
-            this.v.setKpiType(KpiType.NEW_USER);
+        if(key.getStatsCommonDismension().getKpiDimension().getKpiName().equals(KpiType.SESSIONS.kpiName)){
+            this.v.setKpiType(KpiType.SESSIONS);
         }
 
         mapWritable.put(new IntWritable(-2),new IntWritable(sessionLength));
