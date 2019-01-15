@@ -3,7 +3,7 @@ package com.phone.etl.mr.nu;
 import com.phone.etl.analysis.dim.base.BaseDimension;
 import com.phone.etl.analysis.dim.base.StatsUserDimension;
 import com.phone.etl.common.GloadUtils;
-import com.phone.etl.mr.IOWriterOutput;
+import com.phone.etl.mr.etl.EtlToHdfs;
 import com.phone.etl.mr.ua.service.IDimension;
 import com.phone.etl.output.BaseOutput;
 import com.phone.etl.output.reduce.ReduceOutput;
@@ -13,7 +13,7 @@ import org.apache.hadoop.io.IntWritable;
 
 import java.sql.PreparedStatement;
 
-public class NewUserOutputWritter implements IOWriterOutput {
+public class NewUserOutputWritter implements EtlToHdfs.IOWriterOutput {
     @Override
     public void output(Configuration conf, BaseDimension k, BaseOutput v, PreparedStatement ps, IDimension iDimension) throws Exception {
         try{

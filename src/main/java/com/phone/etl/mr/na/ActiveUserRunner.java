@@ -4,9 +4,7 @@ import com.phone.etl.analysis.dim.base.DateDimension;
 import com.phone.etl.analysis.dim.base.DateEnum;
 import com.phone.etl.analysis.dim.base.StatsUserDimension;
 import com.phone.etl.common.GloadUtils;
-import com.phone.etl.mr.OutputToMysqlFormat;
-import com.phone.etl.mr.nu.NewUserMapper;
-import com.phone.etl.mr.nu.NewUserReducer;
+import com.phone.etl.mr.etl.OutputToMysqlFormat;
 import com.phone.etl.mr.ua.service.IDimension;
 import com.phone.etl.mr.ua.service.impl.IDimensionImpl;
 import com.phone.etl.output.map.MapOutput;
@@ -68,7 +66,7 @@ public class ActiveUserRunner implements Tool {
 
         //设置reduce task的数量
         job.setNumReduceTasks(1);
-        FileInputFormat.setInputPaths(job,new Path("/odl/09/18/part-m-00000"));
+        FileInputFormat.setInputPaths(job,new Path("/odl/09/05/part-m-00000"));
 
         //设置输入参数
 //        FileInputFormat.setInputPaths(job,new Path("/ods/09/18/part-m-00000"));

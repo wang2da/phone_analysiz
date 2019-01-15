@@ -33,10 +33,10 @@ public class NewUserMapper extends Mapper<LongWritable,Text,StatsUserDimension,M
         String[] fields = line.split("\001");
         String en = fields[2];
         if(StringUtils.isNotEmpty(en) && en.equals(EventLogsConstant.EventEnum.LAUNCH.alias)){
-            String serverTime = fields[1];
-            String platform = fields[13];
-            String uuid = fields[3];
-            String browserName = fields[24];
+            String serverTime     = fields[1];
+            String platform       = fields[13];
+            String uuid           = fields[3];
+            String browserName    = fields[24];
             String browserVersion = fields[25];
             if(StringUtils.isEmpty(serverTime) || StringUtils.isEmpty(uuid)){
                 logger.info("serverTime | uuid is null.");
@@ -61,13 +61,13 @@ public class NewUserMapper extends Mapper<LongWritable,Text,StatsUserDimension,M
             context.write(this.k,this.v);
 
 
-//            statsCommonDismension.setKpiDimension(browserNewUserKpi);
-//            BrowserDimension browserDimension = BrowserDimension.newInstance(browserName,browserVersion);
-//            this.k.setBrowserDimension(browserDimension);
-//            this.k.setStatsCommonDismension(statsCommonDismension);
-//
-//
-//            context.write(this.k, this.v);
+            statsCommonDismension.setKpiDimension(browserNewUserKpi);
+            BrowserDimension browserDimension = BrowserDimension.newInstance(browserName,browserVersion);
+            this.k.setBrowserDimension(browserDimension);
+            this.k.setStatsCommonDismension(statsCommonDismension);
+
+
+            context.write(this.k, this.v);
 
         }
 

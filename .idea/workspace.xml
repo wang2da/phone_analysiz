@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="57079360-1cb8-481a-99ae-0adb93906502" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/phone_analystic$NewUserRunner.coverage" NAME="NewUserRunner Coverage Results" MODIFIED="1537785097140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="2059026626">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>private</find>
+      <find>&quot;</find>
+      <find>type</find>
+      <find>getOutputCommitter</find>
+      <find>getDimensionByObject</find>
+      <find>uuid</find>
+      <find>kvend</find>
+      <find>selcet id form dimension_kpi</find>
+      <find>imension_kpi where kpi</find>
+      <find>Active</find>
+      <find>total_new_total_member</find>
+      <find>total_user_new_member</find>
+      <find>next</find>
+      <find>getCurrentKey</find>
+      <find>qqwry.dat</find>
+      <find>ipFile</find>
+      <find>local</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>public</replace>
+      <replace>private</replace>
+      <replace>dateType</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/am/MemberUserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/utils/MemberUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nm/NewMemberOutputWritter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/session/SessionOutputWritter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/pv/PageViesReducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/pv/PageViewMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/etl/EtlToHdfs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/etl/EtlToHdfsMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/etl/LogWritable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/pv/PageViewOutputWritter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/output/reduce/TextOutputValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/session/SessionReducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/session/SessionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/output/reduce/LocalOutputValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/analysis/dim/base/StatsLocalDimension.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/local/LocalReducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/analysis/dim/base/LocationDimension.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nm/NewMemberReducer.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/output_writter.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/output_mapping.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/analysis/dim/base/StatsCommonDismension.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/local/LocalMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/na/ActiveUserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/analysis/dim/base/StatsUserDimension.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/na/ActiveUserReducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/utils/KpiType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/na/ActiveUserOutputWritter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/analysis/dim/base/EventDimension.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/hive/en/DateDimensionUDF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/hive/en/EventDimensionUDF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/hive/en/PlatforUDF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/hive/en/PlatformUDF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/oozie/hive/job.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/oozie/mr/job.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/oozie/mr/workflow.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nu/NewUserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/etl/OutputToMysqlFormat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/etl/EtlToHdfsRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nm/NewMemberMapper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/phone/IpTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nu/NewUserRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/na/ActiveUserRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/am/MemberUserRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nm/NewMemberRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/session/SessionRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/local/LocalRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/pv/PageViewRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/hive/en/CurrencyTypeDimensionUdf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/hive/en/PaymentTypeDimensionUdf.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/ua/service/impl/IDimensionImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/local/LocalOutputWritter.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven_MV\repository" />
+        <option name="mavenHome" value="D:/Maven_MV/Maven_MV/Maven_src/MavenZip/apache-maven-3.2.2" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="phone_analystic" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="phone_analystic" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="phone_analystic" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness &gt; Messages</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Performance</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
+          </State>
+          <State>
+            <id>Android Lint for Kotlin</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJava</id>
+          </State>
+          <State>
+            <id>Class metricsJava</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>Error handlingGroovy</id>
+          </State>
+          <State>
+            <id>Error handlingJava</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Internationalization issuesJava</id>
+          </State>
+          <State>
+            <id>JSON</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Method MetricsGroovy</id>
+          </State>
+          <State>
+            <id>Method metricsJava</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>Performance issuesJava</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>XSLT</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="phone_analystic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone_analystic-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phone_analystic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone_analystic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phone_analystic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone_analystic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phone_analystic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone_analystic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phone_analystic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone_analystic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="etl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phone_analystic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone_analystic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="etl" type="462c0819:PsiDirectoryNode" />
+              <item name="oozie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phone_analystic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone_analystic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phone_analystic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone_analystic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phone_analystic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone_analystic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phone_analystic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone_analystic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="phone" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phone_analystic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone_analystic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="TextInputFormat&#9;PSI&#9;JAVA://org.apache.hadoop.mapred.TextInputFormat&#10;IpUtils&#9;PSI&#9;JAVA://com.phone.etl.ip.IPSeeker.IPSeekerUtils&#10;My&#9;FILE&#9;file://D:/idea_workspace/phone_analystic-master/src/main/java/com/phone/etl/mr/etl/OutputToMysqlFormat.java&#10;mysq&#9;null&#9;null" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.phone.etl.mr.local" />
+      <recent name="com.phone.etl.mr.pv" />
+      <recent name="com.phone.etl.mr.session" />
+      <recent name="com.phone.etl.mr.nm" />
+      <recent name="com.phone.etl.mr.na" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\idea_workspace\phone_analystic-master\src\main\java\com\phone\etl\analysis\dim\base" />
+      <recent name="D:\idea_workspace\phone_analystic-master\src\main\java\com\phone\etl\hive\en" />
+      <recent name="D:\idea_workspace\phone_analystic-master\src\main\java\com\phone\etl\output\reduce" />
+      <recent name="D:\idea_workspace\phone_analystic-master\src\main\java\com\phone\etl\utils" />
+      <recent name="D:\idea_workspace\phone_analystic-master\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.PageViewRunner">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActiveUserRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.phone.etl.mr.na.ActiveUserRunner" />
+      <module name="phone_analystic" />
+      <option name="PROGRAM_PARAMETERS" value="-d 2018-09-05" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.phone.etl.mr.na.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EtlToHdfsRunner" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.phone.etl.mr.etl.EtlToHdfsRunner" />
+      <module name="phone_analystic" />
+      <option name="PROGRAM_PARAMETERS" value="-d 2018-09-15" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EventDimensionUDF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.phone.etl.hive.en.EventDimensionUDF" />
+      <module name="phone_analystic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.phone.etl.hive.en.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IpTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.phone.IpTest" />
+      <module name="phone_analystic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.phone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocalRunner" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.phone.etl.mr.local.LocalRunner" />
+      <module name="phone_analystic" />
+      <option name="PROGRAM_PARAMETERS" value="-d 2018-09-05" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.phone.LogTest" />
+      <module name="phone_analystic" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.phone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberUserRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.phone.etl.mr.am.MemberUserRunner" />
+      <module name="phone_analystic" />
+      <option name="PROGRAM_PARAMETERS" value="-d 2018-09-05" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.phone.etl.mr.am.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewMemberRunner" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.phone.etl.mr.nm.NewMemberRunner" />
+      <module name="phone_analystic" />
+      <option name="PROGRAM_PARAMETERS" value="-d 2018-09-05" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewUserRunner" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.phone.etl.mr.nu.NewUserRunner" />
+      <module name="phone_analystic" />
+      <option name="PROGRAM_PARAMETERS" value="-d 2018-09-05" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PageViewRunner" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.phone.etl.mr.pv.PageViewRunner" />
+      <module name="phone_analystic" />
+      <option name="PROGRAM_PARAMETERS" value="-d 2018-09-05" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SessionRunner" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.phone.etl.mr.local.LocalRunner" />
+      <module name="phone_analystic" />
+      <option name="PROGRAM_PARAMETERS" value="-d 2018-09-05" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.EtlToHdfsRunner" />
+      <item itemvalue="Application.NewUserRunner" />
+      <item itemvalue="Application.NewMemberRunner" />
+      <item itemvalue="Application.SessionRunner" />
+      <item itemvalue="Application.LocalRunner" />
+      <item itemvalue="Application.PageViewRunner" />
+      <item itemvalue="Application.ActiveUserRunner" />
+      <item itemvalue="Application.MemberUserRunner" />
+      <item itemvalue="Application.EventDimensionUDF" />
+      <item itemvalue="Application.IpTest" />
+      <item itemvalue="Application.LogTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MemberUserRunner" />
+        <item itemvalue="Application.ActiveUserRunner" />
+        <item itemvalue="Application.LogTest" />
+        <item itemvalue="Application.IpTest" />
+        <item itemvalue="Application.EventDimensionUDF" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57079360-1cb8-481a-99ae-0adb93906502" name="Default" comment="" />
+      <created>1537262855648</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1537262855648</updated>
+      <workItem from="1547541307730" duration="849000" />
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1537619420368</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537619420370</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2018-09-25 commit">
+      <created>1537882032574</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537882032574</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2018-09-26 commit">
+      <created>1537959870932</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1537959870932</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2018-09-26 21:39 commit">
+      <created>1537969204578</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1537969204578</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="849000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28214827" />
+      <window_info id="Structure" order="1" weight="0.24962178" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8472012" weight="0.28336078" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8774584" weight="0.23723228" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294893" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.12254161" side_tool="true" weight="0.4431631" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.7635468" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3261944" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.23146747" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24508321" />
+      <window_info id="Structure" order="1" weight="0.24962178" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8472012" visible="true" weight="0.38220757" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8774584" weight="0.23723228" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294893" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.12254161" side_tool="true" weight="0.4431631" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3261944" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.23146747" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="2018-09-25 commit" />
+    <MESSAGE value="2018-09-26 commit" />
+    <MESSAGE value="2018-09-26 21:39 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018-09-26 21:39 commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="ps.addBatch();" />
+        <watch expression="iDimension.getDimensionByObject(((StatsUserDimension) k).getStatsCommonDismension().getKpiDimension())" />
+        <watch expression="iDimension.getDimensionByObject(((StatsUserDimension) k).getStatsCommonDismension().getKpiDimension())" />
+        <watch expression="((IntWritable)(value.getValue().get(new IntWritable(j)))).get()" />
+        <watch expression="Integer.parseInt(en.getKey())" />
+        <watch expression="en.getValue()" />
+        <watch expression="en.getValue()" />
+        <watch expression="totalNewUser" />
+        <watch expression="totalNewUser" />
+        <watch expression="totalNewUser" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/oozie/mr/job.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/am/MemberUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/etl/LogWritable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/utils/MemberUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nm/NewMemberMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="880">
+          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_MV/repository/org/apache/hadoop/hadoop-core/2.6.0-mr1-cdh5.13.2/hadoop-core-2.6.0-mr1-cdh5.13.2-sources.jar!/mapred/org/apache/hadoop/mapred/JobConf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="433" column="17" selection-start-line="433" selection-start-column="17" selection-end-line="433" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_MV/repository/org/apache/hadoop/hadoop-core/2.6.0-mr1-cdh5.13.2/hadoop-core-2.6.0-mr1-cdh5.13.2-sources.jar!/mapred/org/apache/hadoop/mapred/LocalJobRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="634" column="20" lean-forward="true" selection-start-line="634" selection-start-column="20" selection-end-line="634" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_MV/repository/org/apache/hadoop/hadoop-core/2.6.0-mr1-cdh5.13.2/hadoop-core-2.6.0-mr1-cdh5.13.2-sources.jar!/mapred/org/apache/hadoop/mapreduce/lib/input/FileInputFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6666">
+          <caret line="344" column="21" selection-start-line="344" selection-start-column="21" selection-end-line="344" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_MV/repository/org/apache/hadoop/hadoop-core/2.6.0-mr1-cdh5.13.2/hadoop-core-2.6.0-mr1-cdh5.13.2-sources.jar!/mapred/org/apache/hadoop/mapred/JobSubmissionProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="100" column="25" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_MV/repository/org/apache/hadoop/hadoop-core/2.6.0-mr1-cdh5.13.2/hadoop-core-2.6.0-mr1-cdh5.13.2-sources.jar!/mapred/org/apache/hadoop/mapred/JobClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19008">
+          <caret line="967" column="13" selection-start-line="967" selection-start-column="13" selection-end-line="967" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_MV/repository/org/apache/hadoop/hadoop-common/2.6.0-cdh5.13.2/hadoop-common-2.6.0-cdh5.13.2.jar!/org/apache/hadoop/util/LineReader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3036">
+          <caret line="149" column="16" selection-start-line="149" selection-start-column="16" selection-end-line="149" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_MV/repository/org/apache/hadoop/hadoop-core/2.6.0-mr1-cdh5.13.2/hadoop-core-2.6.0-mr1-cdh5.13.2-sources.jar!/mapred/org/apache/hadoop/mapreduce/Job.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12650">
+          <caret line="607" column="17" selection-start-line="607" selection-start-column="17" selection-end-line="607" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_MV/repository/org/apache/hadoop/hadoop-core/2.6.0-mr1-cdh5.13.2/hadoop-core-2.6.0-mr1-cdh5.13.2-sources.jar!/mapred/org/apache/hadoop/mapred/TextInputFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="57" column="25" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_MV/repository/org/apache/hadoop/hadoop-core/2.6.0-mr1-cdh5.13.2/hadoop-core-2.6.0-mr1-cdh5.13.2-sources.jar!/mapred/org/apache/hadoop/mapred/LineRecordReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="130" column="21" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Program Files/Java/jdk1.8.0_111/src.zip!/java/io/RandomAccessFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="552" column="16" selection-start-line="552" selection-start-column="16" selection-end-line="552" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/phone/IpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/ip/IPSeeker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="501" column="38" lean-forward="true" selection-start-line="501" selection-start-column="38" selection-end-line="501" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/ip/IpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3347">
+          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/phone/DimensionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="17" column="54" lean-forward="true" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/ip/UserAgentUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/phone/LogTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/etl/EtlToHdfs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="24" column="44" lean-forward="true" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/na/ActiveUserRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/am/MemberUserRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="70" column="16" lean-forward="true" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nm/NewMemberRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nu/NewUserRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/session/SessionRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/oozie/mr/workflow.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="83" column="54" selection-start-line="83" selection-start-column="54" selection-end-line="83" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/pv/PageViewReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/local/LocalRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/pv/PageViewMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/pv/PageViewRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="68" column="62" selection-start-line="68" selection-start-column="62" selection-end-line="68" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/ua/service/IDimension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/ua/service/impl/IDimensionImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="122" column="83" selection-start-line="122" selection-start-column="83" selection-end-line="122" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/hive/en/CurrencyTypeDimensionUdf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/hive/en/PaymentTypeDimensionUdf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/local/LocalOutputWritter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="31" column="33" selection-start-line="29" selection-start-column="32" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/output_mapping.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="168" column="18" lean-forward="true" selection-start-line="168" selection-start-column="18" selection-end-line="172" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/phone/AgentTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/etl/EtlToHdfsRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="52" column="31" lean-forward="true" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/etl/EtlToHdfsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="32" column="53" lean-forward="true" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/ip/LogUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="50" column="131" selection-start-line="50" selection-start-column="131" selection-end-line="50" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/common/EventLogsConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="45" column="65" selection-start-line="45" selection-start-column="60" selection-end-line="45" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nu/NewUserReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/analysis/dim/base/LocationDimension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/output/reduce/TextOutputValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="42" column="16" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/local/LocalMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-66">
+          <caret line="46" column="19" lean-forward="true" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/output/reduce/LocalOutputValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="968">
+          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/local/LocalReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="57" column="23" selection-start-line="57" selection-start-column="23" selection-end-line="57" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nu/NewUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/etl/OutputToMysqlFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="82" column="38" lean-forward="true" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>phone_analystic</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

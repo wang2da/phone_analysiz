@@ -12,12 +12,12 @@ import com.phone.etl.ip.IPSeeker;
  **/
 public class IpTest {
     public static void main(String[] args) {
-        System.out.println(IPSeeker.getInstance().getCountry("112.111.11.12"));
+        System.out.println(IPSeeker.getInstance().getCountry("43.47.150.72"));
 
-        System.out.println(IpUtil.getRegionInfoByIp("112.111.11.12"));
+        System.out.println(IpUtil.getRegionInfoByIp("43.47.150.72"));
 
         try {
-            System.out.println(IpUtil.parserIp1("http://ip.taobao.com/service/getIpInfo.php?ip=112.111.11.12","utf-8"));
+            System.out.println(IpUtil.parserIp1("http://ip.taobao.com/service/getIpInfo.php?ip=43.47.150.72","utf-8"));
         } catch (Exception e) {
             e.printStackTrace();
         }
