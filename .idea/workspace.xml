@@ -27,10 +27,40 @@
           <entry key="git.branch.create.new" value="1" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="36" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="36" />
+        </counts>
+      </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/phone/learning.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/am/MemberUserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/utils/MemberUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/nm/NewMemberOutputWritter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/session/SessionOutputWritter.java" />
@@ -132,6 +161,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/hive/en/PaymentTypeDimensionUdf.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/ua/service/impl/IDimensionImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/phone/etl/mr/local/LocalOutputWritter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/phone/learning.java" />
       </list>
     </option>
   </component>
@@ -296,6 +326,27 @@
             <path>
               <item name="phone_analystic" type="b2602c69:ProjectViewProjectNode" />
               <item name="phone_analystic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phone_analystic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone_analystic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phone_analystic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone_analystic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="phone" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="phone_analystic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phone_analystic-master" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -310,7 +361,7 @@
     <property name="SearchEverywhereHistoryKey" value="TextInputFormat&#9;PSI&#9;JAVA://org.apache.hadoop.mapred.TextInputFormat&#10;IpUtils&#9;PSI&#9;JAVA://com.phone.etl.ip.IPSeeker.IPSeekerUtils&#10;My&#9;FILE&#9;file://D:/idea_workspace/phone_analystic-master/src/main/java/com/phone/etl/mr/etl/OutputToMysqlFormat.java&#10;mysq&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547543691207" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547544239004" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -558,7 +609,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537262855648</updated>
-      <workItem from="1547541307730" duration="2373000" />
+      <workItem from="1547541307730" duration="2917000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1537619420368</created>
@@ -592,7 +643,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2373000" />
+    <option name="totallyTimeSpent" value="2917000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -606,7 +657,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28214827" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28214827" />
       <window_info id="Structure" order="1" weight="0.24962178" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -624,7 +675,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294893" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.12254161" side_tool="true" weight="0.4431631" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4597701" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4597701" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3261944" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -701,13 +752,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/oozie/mr/job.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/phone/etl/mr/am/MemberUserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
@@ -1055,6 +1099,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="82" column="38" lean-forward="true" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/phone/learning.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
         </state>
       </provider>
     </entry>
