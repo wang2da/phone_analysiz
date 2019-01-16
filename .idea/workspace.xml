@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="57079360-1cb8-481a-99ae-0adb93906502" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="57079360-1cb8-481a-99ae-0adb93906502" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,13 +41,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="165" />
+          <entry key="java" value="171" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="165" />
+          <entry key="JAVA" value="171" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
@@ -615,7 +613,9 @@
       <updated>1537262855648</updated>
 
       <workItem from="1547541307730" duration="4909000" />
+
       <workItem from="1547608209016" duration="1201000" />
+
 
     </task>
     <task id="LOCAL-00001" summary="first commit">
@@ -651,8 +651,8 @@
   </component>
   <component name="TimeTrackingManager">
 
-    <option name="totallyTimeSpent" value="6110000" />
 
+    <option name="totallyTimeSpent" value="6110000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -665,6 +665,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
 
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28744328" />
@@ -1105,6 +1106,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/phone/learning.java">
       <provider selected="true" editor-type-id="text-editor">
+
 
         <state relative-caret-position="220">
           <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
