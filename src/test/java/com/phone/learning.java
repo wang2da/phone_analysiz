@@ -20,6 +20,8 @@ public class learning {
 
     @Override
     public String toString() {
-        return toString().intern();
+
+        return super.toString();
+
     }
 }
